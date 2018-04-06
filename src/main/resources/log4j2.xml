@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <!--<File name="InfoLog" fileName="info.log" immediateFlush="true" append="true">-->
+            <!--<PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+        <!--</File>-->
+        <!--<File name="GeralErrorLog" fileName="error.log" immediateFlush="true" append="true">-->
+            <!--<PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+        <!--</File>-->
+        <!--<File name="MonitoringErrorLog" fileName="error.log" immediateFlush="true"-->
+              <!--append="true">-->
+            <!--<PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+        <!--</File>-->
+    </Appenders>
+    <Loggers>
+        <!--<Logger name="GeralErrorLogger" level="error">-->
+            <!--<AppenderRef ref="GeralErrorLog"/>-->
+        <!--</Logger>-->
+
+        <Root level="all">
+            <AppenderRef ref="Console" level="info"/>
+        </Root>
+    </Loggers>
+</Configuration>
