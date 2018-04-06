@@ -3,3 +3,5 @@ somejson.json
 .idea/
 esval/
 out/
+app.properties
+build/
